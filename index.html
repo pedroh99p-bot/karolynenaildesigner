@@ -491,7 +491,7 @@
 
         .hero-media img {
             object-fit: cover;
-            object-position: 72% center;
+            object-position: 76% center;
             filter: saturate(0.95) contrast(1.02);
         }
 
@@ -501,7 +501,7 @@
             inset: 0;
             z-index: 1;
             background:
-                linear-gradient(90deg, rgba(9, 7, 10, 0.96) 0%, rgba(9, 7, 10, 0.88) 34%, rgba(9, 7, 10, 0.48) 58%, rgba(9, 7, 10, 0.08) 100%),
+                linear-gradient(90deg, rgba(9, 7, 10, 0.98) 0%, rgba(9, 7, 10, 0.92) 30%, rgba(9, 7, 10, 0.58) 54%, rgba(9, 7, 10, 0.14) 100%),
                 linear-gradient(180deg, rgba(9, 7, 10, 0.18) 0%, rgba(9, 7, 10, 0.5) 100%);
         }
 
@@ -521,44 +521,61 @@
             position: relative;
             z-index: 2;
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             min-height: 100svh;
-            padding: 7.5rem 0 4rem;
+            padding: 6.9rem 0 3rem;
         }
 
         .hero-copy {
-            width: min(100%, 640px);
+            width: min(18.5rem, calc(100vw - 2rem));
+            max-width: 18.5rem;
+            padding-right: 0.35rem;
+        }
+
+        .mobile-only {
+            display: inline;
+        }
+
+        .desktop-only {
+            display: none;
         }
 
         .hero h1 {
-            font-size: clamp(3rem, 7vw, 5.5rem);
-            margin: 1rem 0 1rem;
+            font-size: clamp(2.7rem, 13vw, 5.5rem);
+            margin: 0.9rem 0 0.75rem;
             text-wrap: balance;
         }
 
         .hero p {
-            max-width: 600px;
+            max-width: 18rem;
             color: var(--cream);
-            font-size: 1.02rem;
+            font-size: 0.97rem;
+            line-height: 1.55;
         }
 
         .hero-actions {
             display: grid;
             gap: 0.9rem;
-            margin-top: 2rem;
+            margin-top: 1.45rem;
         }
 
         .hero-badges {
-            margin-top: 2rem;
+            margin-top: 1.35rem;
+        }
+
+        .hero-badges .pill:nth-child(n + 3) {
+            display: none;
         }
 
         .hero-note {
             display: inline-flex;
             align-items: center;
             gap: 0.65rem;
-            margin-top: 1.6rem;
+            margin-top: 1.15rem;
             color: rgba(255, 248, 240, 0.84);
-            font-size: 0.9rem;
+            font-size: 0.88rem;
+            line-height: 1.45;
+            max-width: 17rem;
         }
 
         .hero-note svg {
@@ -725,6 +742,107 @@
             color: rgba(47, 32, 24, 0.8);
             font-size: 0.94rem;
             font-weight: 600;
+        }
+
+        .quiz-section {
+            background:
+                radial-gradient(circle at 80% 0%, rgba(207, 175, 134, 0.14), transparent 24%),
+                linear-gradient(180deg, rgba(14, 11, 16, 0.94), rgba(10, 8, 12, 0.98));
+        }
+
+        .quiz-card {
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(232, 210, 186, 0.14);
+            background:
+                linear-gradient(180deg, rgba(255, 248, 240, 0.04), rgba(255, 248, 240, 0.015)),
+                rgba(18, 14, 20, 0.84);
+            box-shadow: var(--shadow);
+        }
+
+        .quiz-grid {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .quiz-field {
+            border: 1px solid rgba(232, 210, 186, 0.12);
+            border-radius: 24px;
+            padding: 1rem;
+            background: rgba(255, 248, 240, 0.03);
+        }
+
+        .quiz-field legend {
+            padding: 0 0.25rem;
+            font-family: var(--font-title);
+            font-size: 1.4rem;
+            color: var(--white);
+        }
+
+        .quiz-options {
+            display: grid;
+            gap: 0.75rem;
+            margin-top: 0.75rem;
+        }
+
+        .quiz-choice {
+            position: relative;
+        }
+
+        .quiz-choice input {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .quiz-choice span {
+            display: block;
+            padding: 0.9rem 1rem;
+            border-radius: 18px;
+            border: 1px solid rgba(232, 210, 186, 0.12);
+            background: rgba(255, 248, 240, 0.02);
+            color: var(--muted);
+            cursor: pointer;
+            transition:
+                border-color 0.3s var(--ease),
+                background-color 0.3s var(--ease),
+                color 0.3s var(--ease),
+                transform 0.3s var(--ease);
+        }
+
+        .quiz-choice input:checked + span {
+            border-color: rgba(207, 175, 134, 0.6);
+            background: rgba(207, 175, 134, 0.12);
+            color: var(--white);
+            transform: translateY(-1px);
+        }
+
+        .quiz-actions {
+            display: grid;
+            gap: 0.9rem;
+            margin-top: 1.5rem;
+        }
+
+        .quiz-submit[aria-disabled="true"] {
+            opacity: 0.6;
+            pointer-events: none;
+            box-shadow: none;
+        }
+
+        .quiz-summary {
+            min-height: 4.4rem;
+            padding: 1rem 1.1rem;
+            border-radius: 20px;
+            background: rgba(255, 248, 240, 0.04);
+            border: 1px solid rgba(232, 210, 186, 0.12);
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+
+        .quiz-hint {
+            color: rgba(255, 248, 240, 0.56);
+            font-size: 0.84rem;
         }
 
         .roller {
@@ -985,6 +1103,118 @@
             z-index: 1;
         }
 
+        .location-layout {
+            display: grid;
+            gap: 1.6rem;
+            align-items: center;
+        }
+
+        .location-map {
+            position: relative;
+            min-height: 280px;
+            border-radius: 28px;
+            overflow: hidden;
+            background:
+                linear-gradient(135deg, rgba(243, 231, 219, 0.98), rgba(229, 212, 194, 0.98));
+            border: 1px solid rgba(123, 91, 69, 0.12);
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.24);
+        }
+
+        .location-map::before,
+        .location-map::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+        }
+
+        .location-map::before {
+            background:
+                linear-gradient(rgba(123, 91, 69, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(123, 91, 69, 0.08) 1px, transparent 1px);
+            background-size: 42px 42px;
+            opacity: 0.6;
+        }
+
+        .location-map::after {
+            background:
+                radial-gradient(circle at 26% 36%, rgba(207, 175, 134, 0.26), transparent 18%),
+                radial-gradient(circle at 68% 70%, rgba(207, 175, 134, 0.18), transparent 16%);
+        }
+
+        .map-route {
+            position: absolute;
+            inset: 18% 12% 14% 16%;
+            border: 2px dashed rgba(123, 91, 69, 0.24);
+            border-radius: 32% 45% 38% 42%;
+            transform: rotate(-8deg);
+        }
+
+        .map-badge {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.72rem 0.95rem;
+            border-radius: 999px;
+            background: rgba(57, 39, 29, 0.88);
+            color: #fffaf3;
+            font-size: 0.85rem;
+            box-shadow: 0 14px 24px rgba(0, 0, 0, 0.14);
+        }
+
+        .map-badge::before {
+            content: "";
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--champagne-strong);
+            box-shadow: 0 0 0 5px rgba(207, 175, 134, 0.18);
+        }
+
+        .map-badge.is-jpa {
+            top: 18%;
+            left: 16%;
+        }
+
+        .map-badge.is-rio {
+            right: 12%;
+            bottom: 18%;
+        }
+
+        .location-copy .eyebrow,
+        .location-copy h2,
+        .location-copy p {
+            display: block;
+        }
+
+        .location-copy p {
+            margin-top: 0.85rem;
+        }
+
+        .location-bullets {
+            display: grid;
+            gap: 0.65rem;
+            margin-top: 1.25rem;
+        }
+
+        .location-bullet {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: rgba(57, 39, 29, 0.82);
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .location-bullet::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--brown);
+            box-shadow: 0 0 0 6px rgba(123, 91, 69, 0.08);
+        }
+
         .location-pin {
             width: 74px;
             height: 74px;
@@ -1118,6 +1348,45 @@
             color: var(--muted);
         }
 
+        .scarcity-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            padding: 0.6rem 0.95rem;
+            border-radius: 999px;
+            background: rgba(207, 175, 134, 0.12);
+            border: 1px solid rgba(207, 175, 134, 0.28);
+            color: var(--champagne-strong);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .scarcity-badge::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--champagne-strong);
+            box-shadow: 0 0 0 6px rgba(207, 175, 134, 0.14);
+        }
+
+        .scarcity-grid {
+            display: grid;
+            gap: 0.85rem;
+            margin-top: 1.5rem;
+        }
+
+        .scarcity-item {
+            padding: 1rem 1.1rem;
+            border-radius: 18px;
+            border: 1px solid rgba(232, 210, 186, 0.12);
+            background: rgba(255, 248, 240, 0.04);
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+
         .cta-actions {
             margin-top: 1.8rem;
             display: grid;
@@ -1228,6 +1497,17 @@
         }
 
         @media (max-width: 767.98px) {
+            .section {
+                padding: 4.4rem 0;
+            }
+
+            .hero-actions .btn,
+            .cta-actions .btn,
+            .location-actions .btn,
+            .quiz-actions .btn {
+                width: 100%;
+            }
+
             .carousel-shell {
                 overflow-x: auto;
                 padding-bottom: 0.4rem;
@@ -1267,6 +1547,29 @@
                 padding: 6.5rem 0;
             }
 
+            .desktop-only {
+                display: inline;
+            }
+
+            .mobile-only {
+                display: none;
+            }
+
+            .hero-copy {
+                width: min(100%, 560px);
+                max-width: 560px;
+                padding-right: 0;
+            }
+
+            .hero p {
+                max-width: 520px;
+                font-size: 1.02rem;
+            }
+
+            .hero-badges .pill:nth-child(n + 3) {
+                display: inline-flex;
+            }
+
             .hero-actions,
             .cta-actions {
                 grid-auto-flow: column;
@@ -1284,8 +1587,16 @@
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
 
+            .quiz-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
             .booking-steps {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .scarcity-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
             }
 
             .footer {
@@ -1306,12 +1617,22 @@
                 object-position: right center;
             }
 
+            .hero::before {
+                background:
+                    linear-gradient(90deg, rgba(9, 7, 10, 0.95) 0%, rgba(9, 7, 10, 0.78) 38%, rgba(9, 7, 10, 0.28) 62%, rgba(9, 7, 10, 0.04) 100%),
+                    linear-gradient(180deg, rgba(9, 7, 10, 0.16) 0%, rgba(9, 7, 10, 0.44) 100%);
+            }
+
             .hero h1 {
                 max-width: 10ch;
             }
 
             .services-grid {
                 grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            .location-layout {
+                grid-template-columns: minmax(300px, 0.95fr) minmax(0, 1.05fr);
             }
 
             .booking-steps {
@@ -1357,8 +1678,8 @@
         <div class="container hero-inner">
             <div class="hero-copy fade-up is-visible">
                 <span class="eyebrow">RJ • Jacarepaguá • Rio das Pedras</span>
-                <h1>Amor em forma de unhas, com cuidado em cada detalhe.</h1>
-                <p>Atendimento de nail designer, manicure e pedicure para quem busca unhas bem cuidadas, acabamento delicado e uma experiência feita com capricho do início ao fim.</p>
+                <h1><span class="mobile-only">Amor em forma de unhas.</span><span class="desktop-only">Amor em forma de unhas, com cuidado em cada detalhe.</span></h1>
+                <p><span class="mobile-only">Atendimento de nail designer, manicure e pedicure com cuidado, delicadeza e capricho.</span><span class="desktop-only">Atendimento de nail designer, manicure e pedicure para quem busca unhas bem cuidadas, acabamento delicado e uma experiência feita com capricho do início ao fim.</span></p>
                 <div class="hero-actions">
                     <a class="btn btn-whatsapp glow-btn" data-wa-message="Olá! Vi sua página e gostaria de consultar horários para fazer minhas unhas." href="#">
                         <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
@@ -1477,6 +1798,29 @@
         </div>
     </section>
 
+    <section class="section quiz-section">
+        <div class="container">
+            <div class="quiz-card reveal">
+                <div class="section-header" style="margin-bottom: 0; text-align: left; max-width: 720px;">
+                    <span class="eyebrow">Pre-atendimento</span>
+                    <h2 class="section-title">Encontre o atendimento ideal para voce</h2>
+                    <p class="section-subtitle">Responda rapidinho e envie suas preferencias pelo WhatsApp.</p>
+                </div>
+                <form id="pre-attendance-quiz" class="quiz-grid">
+                    <fieldset class="quiz-field"><legend>Qual cuidado voce esta buscando?</legend><div class="quiz-options"><label class="quiz-choice"><input type="radio" name="service" value="Manicure"><span>Manicure</span></label><label class="quiz-choice"><input type="radio" name="service" value="Pedicure"><span>Pedicure</span></label><label class="quiz-choice"><input type="radio" name="service" value="Banho de gel"><span>Banho de gel</span></label><label class="quiz-choice"><input type="radio" name="service" value="Nail designer"><span>Nail designer</span></label></div></fieldset>
+                    <fieldset class="quiz-field"><legend>Qual estilo combina mais com voce?</legend><div class="quiz-options"><label class="quiz-choice"><input type="radio" name="style" value="Mais delicado"><span>Mais delicado</span></label><label class="quiz-choice"><input type="radio" name="style" value="Mais classico"><span>Mais classico</span></label><label class="quiz-choice"><input type="radio" name="style" value="Mais moderno"><span>Mais moderno</span></label><label class="quiz-choice"><input type="radio" name="style" value="Ainda nao sei"><span>Ainda nao sei</span></label></div></fieldset>
+                    <fieldset class="quiz-field"><legend>Quando voce gostaria de agendar?</legend><div class="quiz-options"><label class="quiz-choice"><input type="radio" name="schedule" value="Ainda esta semana"><span>Ainda esta semana</span></label><label class="quiz-choice"><input type="radio" name="schedule" value="Proximos dias"><span>Proximos dias</span></label><label class="quiz-choice"><input type="radio" name="schedule" value="Quero consultar horarios primeiro"><span>Quero consultar horarios primeiro</span></label></div></fieldset>
+                    <fieldset class="quiz-field"><legend>E seu primeiro atendimento?</legend><div class="quiz-options"><label class="quiz-choice"><input type="radio" name="firstVisit" value="Sim"><span>Sim</span></label><label class="quiz-choice"><input type="radio" name="firstVisit" value="Nao"><span>Nao</span></label></div></fieldset>
+                </form>
+                <div class="quiz-actions">
+                    <div id="quiz-summary" class="quiz-summary">Selecione uma opcao em cada etapa para gerar uma mensagem pronta e acelerar seu atendimento no WhatsApp.</div>
+                    <a id="quiz-submit" class="btn btn-whatsapp glow-btn quiz-submit" href="#" aria-disabled="true">Enviar respostas pelo WhatsApp</a>
+                    <div class="quiz-hint">O pre-atendimento ajuda a receber horarios e sugestoes com mais rapidez.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="roller is-light">
         <div class="roller-track">
             <div class="roller-group">
@@ -1501,145 +1845,25 @@
     <section class="section portfolio" id="portfolio">
         <div class="container">
             <div class="section-header fade-up">
-                <span class="eyebrow">Portfólio</span>
-                <h2 class="section-title">Estilos reais para inspirar o seu próximo horário.</h2>
-                <p class="section-subtitle">Escolha uma referência, envie pelo WhatsApp e consulte disponibilidade para reproduzir o acabamento que combina com você.</p>
+                <span class="eyebrow">Portfolio</span>
+                <h2 class="section-title">Escolha uma referencia e envie direto para o WhatsApp.</h2>
+                <p class="section-subtitle">O carrossel foi simplificado para voce bater o olho, salvar o numero do estilo e consultar disponibilidade mais rapido.</p>
             </div>
         </div>
         <div class="carousel-shell">
             <div class="carousel-track">
-                <article class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/551881246_18527338723025598_2194022384014812028_n._wnukeg.webp" alt="Unhas delicadas com acabamento suave" loading="lazy">
-                        <span class="portfolio-tag">Delicadas</span>
-                    </div>
-                    <div class="portfolio-body">
-                        <h3>Delicadas</h3>
-                        <p>Acabamento leve e elegante para um visual mais sutil.</p>
-                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
-                    </div>
-                </article>
-                <article class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/496819879_18501411874025598_74173653499244756_n._ntauxy.webp" alt="Unhas clássicas com acabamento refinado" loading="lazy">
-                        <span class="portfolio-tag">Clássicas</span>
-                    </div>
-                    <div class="portfolio-body">
-                        <h3>Clássicas</h3>
-                        <p>Visual atemporal, limpo e cheio de delicadeza.</p>
-                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
-                    </div>
-                </article>
-                <article class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/548601975_18525216454025598_2035889577577903423_n._rncizm.webp" alt="Unhas naturais com brilho discreto" loading="lazy">
-                        <span class="portfolio-tag">Naturais</span>
-                    </div>
-                    <div class="portfolio-body">
-                        <h3>Naturais</h3>
-                        <p>Brilho equilibrado e resultado que valoriza o natural.</p>
-                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
-                    </div>
-                </article>
-                <article class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/620165844_17926674483198356_4180127297039765808_n._mbqed8.webp" alt="Unhas brilhosas em destaque" loading="lazy">
-                        <span class="portfolio-tag">Brilhosas</span>
-                    </div>
-                    <div class="portfolio-body">
-                        <h3>Brilhosas</h3>
-                        <p>Pontos de luz e presença para um look mais marcante.</p>
-                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
-                    </div>
-                </article>
-                <article class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/561602262_18530689039025598_9025904959173769228_n._jmu0kb.webp" alt="Unhas decoradas com detalhes" loading="lazy">
-                        <span class="portfolio-tag">Decoradas</span>
-                    </div>
-                    <div class="portfolio-body">
-                        <h3>Decoradas</h3>
-                        <p>Detalhes criativos para valorizar ainda mais seu estilo.</p>
-                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
-                    </div>
-                </article>
-                <article class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/481416143_18486607426025598_2912883244544668718_n._mili6o.webp" alt="Banho de gel com acabamento sofisticado" loading="lazy">
-                        <span class="portfolio-tag">Banho de gel</span>
-                    </div>
-                    <div class="portfolio-body">
-                        <h3>Banho de gel</h3>
-                        <p>Mais resistência, brilho e naturalidade para o dia a dia.</p>
-                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
-                    </div>
-                </article>
-                <article class="portfolio-card" aria-hidden="true">
-                    <div class="portfolio-image">
-                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/551881246_18527338723025598_2194022384014812028_n._wnukeg.webp" alt="" loading="lazy">
-                        <span class="portfolio-tag">Delicadas</span>
-                    </div>
-                    <div class="portfolio-body">
-                        <h3>Delicadas</h3>
-                        <p>Acabamento leve e elegante para um visual mais sutil.</p>
-                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
-                    </div>
-                </article>
-                <article class="portfolio-card" aria-hidden="true">
-                    <div class="portfolio-image">
-                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/496819879_18501411874025598_74173653499244756_n._ntauxy.webp" alt="" loading="lazy">
-                        <span class="portfolio-tag">Clássicas</span>
-                    </div>
-                    <div class="portfolio-body">
-                        <h3>Clássicas</h3>
-                        <p>Visual atemporal, limpo e cheio de delicadeza.</p>
-                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
-                    </div>
-                </article>
-                <article class="portfolio-card" aria-hidden="true">
-                    <div class="portfolio-image">
-                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/548601975_18525216454025598_2035889577577903423_n._rncizm.webp" alt="" loading="lazy">
-                        <span class="portfolio-tag">Naturais</span>
-                    </div>
-                    <div class="portfolio-body">
-                        <h3>Naturais</h3>
-                        <p>Brilho equilibrado e resultado que valoriza o natural.</p>
-                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
-                    </div>
-                </article>
-                <article class="portfolio-card" aria-hidden="true">
-                    <div class="portfolio-image">
-                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/620165844_17926674483198356_4180127297039765808_n._mbqed8.webp" alt="" loading="lazy">
-                        <span class="portfolio-tag">Brilhosas</span>
-                    </div>
-                    <div class="portfolio-body">
-                        <h3>Brilhosas</h3>
-                        <p>Pontos de luz e presença para um look mais marcante.</p>
-                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
-                    </div>
-                </article>
-                <article class="portfolio-card" aria-hidden="true">
-                    <div class="portfolio-image">
-                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/561602262_18530689039025598_9025904959173769228_n._jmu0kb.webp" alt="" loading="lazy">
-                        <span class="portfolio-tag">Decoradas</span>
-                    </div>
-                    <div class="portfolio-body">
-                        <h3>Decoradas</h3>
-                        <p>Detalhes criativos para valorizar ainda mais seu estilo.</p>
-                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
-                    </div>
-                </article>
-                <article class="portfolio-card" aria-hidden="true">
-                    <div class="portfolio-image">
-                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/481416143_18486607426025598_2912883244544668718_n._mili6o.webp" alt="" loading="lazy">
-                        <span class="portfolio-tag">Banho de gel</span>
-                    </div>
-                    <div class="portfolio-body">
-                        <h3>Banho de gel</h3>
-                        <p>Mais resistência, brilho e naturalidade para o dia a dia.</p>
-                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
-                    </div>
-                </article>
+                <article class="portfolio-card"><div class="portfolio-image"><img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/551881246_18527338723025598_2194022384014812028_n._wnukeg.webp" alt="Estilo 01 do portfolio de unhas" loading="lazy"><span class="portfolio-tag">Estilo 01</span></div><div class="portfolio-body"><h3>Estilo 01</h3><p>Referencia pronta para voce mandar e consultar horarios.</p><a class="btn btn-outline btn-soft" data-wa-message="Ola! Vi o estilo 01 no portfolio e gostaria de consultar horarios." href="#">Quero esse estilo</a></div></article>
+                <article class="portfolio-card"><div class="portfolio-image"><img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/496819879_18501411874025598_74173653499244756_n._ntauxy.webp" alt="Estilo 02 do portfolio de unhas" loading="lazy"><span class="portfolio-tag">Estilo 02</span></div><div class="portfolio-body"><h3>Estilo 02</h3><p>Mais uma inspiracao visual para facilitar sua escolha.</p><a class="btn btn-outline btn-soft" data-wa-message="Ola! Vi o estilo 02 no portfolio e gostaria de consultar horarios." href="#">Quero esse estilo</a></div></article>
+                <article class="portfolio-card"><div class="portfolio-image"><img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/548601975_18525216454025598_2035889577577903423_n._rncizm.webp" alt="Estilo 03 do portfolio de unhas" loading="lazy"><span class="portfolio-tag">Estilo 03</span></div><div class="portfolio-body"><h3>Estilo 03</h3><p>Use o numero do estilo para adiantar seu atendimento.</p><a class="btn btn-outline btn-soft" data-wa-message="Ola! Vi o estilo 03 no portfolio e gostaria de consultar horarios." href="#">Quero esse estilo</a></div></article>
+                <article class="portfolio-card"><div class="portfolio-image"><img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/620165844_17926674483198356_4180127297039765808_n._mbqed8.webp" alt="Estilo 04 do portfolio de unhas" loading="lazy"><span class="portfolio-tag">Estilo 04</span></div><div class="portfolio-body"><h3>Estilo 04</h3><p>Escolha rapida para mandar no WhatsApp sem complicacao.</p><a class="btn btn-outline btn-soft" data-wa-message="Ola! Vi o estilo 04 no portfolio e gostaria de consultar horarios." href="#">Quero esse estilo</a></div></article>
+                <article class="portfolio-card"><div class="portfolio-image"><img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/561602262_18530689039025598_9025904959173769228_n._jmu0kb.webp" alt="Estilo 05 do portfolio de unhas" loading="lazy"><span class="portfolio-tag">Estilo 05</span></div><div class="portfolio-body"><h3>Estilo 05</h3><p>Inspiracao organizada para escolher o que mais combina com voce.</p><a class="btn btn-outline btn-soft" data-wa-message="Ola! Vi o estilo 05 no portfolio e gostaria de consultar horarios." href="#">Quero esse estilo</a></div></article>
+                <article class="portfolio-card"><div class="portfolio-image"><img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/481416143_18486607426025598_2912883244544668718_n._mili6o.webp" alt="Estilo 06 do portfolio de unhas" loading="lazy"><span class="portfolio-tag">Estilo 06</span></div><div class="portfolio-body"><h3>Estilo 06</h3><p>Mais uma referencia visual pronta para sua mensagem.</p><a class="btn btn-outline btn-soft" data-wa-message="Ola! Vi o estilo 06 no portfolio e gostaria de consultar horarios." href="#">Quero esse estilo</a></div></article>
+                <article class="portfolio-card" aria-hidden="true"><div class="portfolio-image"><img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/551881246_18527338723025598_2194022384014812028_n._wnukeg.webp" alt="" loading="lazy"><span class="portfolio-tag">Estilo 01</span></div><div class="portfolio-body"><h3>Estilo 01</h3><p>Referencia pronta para voce mandar e consultar horarios.</p><a class="btn btn-outline btn-soft" data-wa-message="Ola! Vi o estilo 01 no portfolio e gostaria de consultar horarios." href="#">Quero esse estilo</a></div></article>
+                <article class="portfolio-card" aria-hidden="true"><div class="portfolio-image"><img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/496819879_18501411874025598_74173653499244756_n._ntauxy.webp" alt="" loading="lazy"><span class="portfolio-tag">Estilo 02</span></div><div class="portfolio-body"><h3>Estilo 02</h3><p>Mais uma inspiracao visual para facilitar sua escolha.</p><a class="btn btn-outline btn-soft" data-wa-message="Ola! Vi o estilo 02 no portfolio e gostaria de consultar horarios." href="#">Quero esse estilo</a></div></article>
+                <article class="portfolio-card" aria-hidden="true"><div class="portfolio-image"><img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/548601975_18525216454025598_2035889577577903423_n._rncizm.webp" alt="" loading="lazy"><span class="portfolio-tag">Estilo 03</span></div><div class="portfolio-body"><h3>Estilo 03</h3><p>Use o numero do estilo para adiantar seu atendimento.</p><a class="btn btn-outline btn-soft" data-wa-message="Ola! Vi o estilo 03 no portfolio e gostaria de consultar horarios." href="#">Quero esse estilo</a></div></article>
+                <article class="portfolio-card" aria-hidden="true"><div class="portfolio-image"><img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/620165844_17926674483198356_4180127297039765808_n._mbqed8.webp" alt="" loading="lazy"><span class="portfolio-tag">Estilo 04</span></div><div class="portfolio-body"><h3>Estilo 04</h3><p>Escolha rapida para mandar no WhatsApp sem complicacao.</p><a class="btn btn-outline btn-soft" data-wa-message="Ola! Vi o estilo 04 no portfolio e gostaria de consultar horarios." href="#">Quero esse estilo</a></div></article>
+                <article class="portfolio-card" aria-hidden="true"><div class="portfolio-image"><img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/561602262_18530689039025598_9025904959173769228_n._jmu0kb.webp" alt="" loading="lazy"><span class="portfolio-tag">Estilo 05</span></div><div class="portfolio-body"><h3>Estilo 05</h3><p>Inspiracao organizada para escolher o que mais combina com voce.</p><a class="btn btn-outline btn-soft" data-wa-message="Ola! Vi o estilo 05 no portfolio e gostaria de consultar horarios." href="#">Quero esse estilo</a></div></article>
+                <article class="portfolio-card" aria-hidden="true"><div class="portfolio-image"><img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/481416143_18486607426025598_2912883244544668718_n._mili6o.webp" alt="" loading="lazy"><span class="portfolio-tag">Estilo 06</span></div><div class="portfolio-body"><h3>Estilo 06</h3><p>Mais uma referencia visual pronta para sua mensagem.</p><a class="btn btn-outline btn-soft" data-wa-message="Ola! Vi o estilo 06 no portfolio e gostaria de consultar horarios." href="#">Quero esse estilo</a></div></article>
             </div>
         </div>
     </section>
@@ -1816,17 +2040,29 @@
     <section class="section" style="padding-top: 0;">
         <div class="container">
             <div class="location-card reveal">
-                <div class="location-pin" aria-hidden="true"></div>
-                <span class="eyebrow">Localização</span>
-                <h2>Atendimento em Rio das Pedras, Jacarepaguá-RJ</h2>
-                <p>Chame no WhatsApp para confirmar os horários disponíveis e receber a localização certinha do atendimento.</p>
-                <div class="location-actions">
-                    <a class="btn btn-whatsapp glow-btn" data-wa-message="Olá! Gostaria de receber a localização e consultar horários disponíveis." href="#">
-                        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                            <path d="M20.52 3.48A11.8 11.8 0 0 0 12.07 0C5.55 0 .23 5.3.23 11.83c0 2.08.54 4.11 1.56 5.9L0 24l6.44-1.69a11.8 11.8 0 0 0 5.63 1.44h.01c6.52 0 11.84-5.31 11.84-11.84 0-3.16-1.23-6.13-3.4-8.43Zm-8.45 18.27h-.01a9.94 9.94 0 0 1-5.08-1.39l-.36-.22-3.82 1 1.02-3.72-.24-.38a9.92 9.92 0 0 1-1.52-5.21c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.92a9.86 9.86 0 0 1 2.9 7.02c0 5.48-4.46 9.92-9.94 9.92Zm5.45-7.42c-.3-.15-1.79-.88-2.07-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.51-.9-.8-1.51-1.8-1.68-2.1-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5l-.57-.01c-.2 0-.52.07-.8.38-.27.3-1.05 1.03-1.05 2.52 0 1.48 1.07 2.92 1.22 3.12.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.71.64.72.23 1.37.2 1.88.12.57-.08 1.79-.73 2.04-1.43.25-.7.25-1.3.18-1.43-.08-.12-.27-.2-.57-.35Z"/>
-                        </svg>
-                        Pedir localização
-                    </a>
+                <div class="location-layout">
+                    <div class="location-map" aria-hidden="true">
+                        <div class="map-route"></div>
+                        <div class="map-badge is-jpa">Jacarepagu?</div>
+                        <div class="map-badge is-rio">Rio das Pedras</div>
+                    </div>
+                    <div class="location-copy">
+                        <span class="eyebrow">Localiza??o</span>
+                        <h2>Atendimento em Rio das Pedras, Jacarepagu?-RJ</h2>
+                        <p>Chame no WhatsApp para confirmar os hor?rios dispon?veis e receber a localiza??o certinha do atendimento.</p>
+                        <div class="location-bullets">
+                            <div class="location-bullet">Atendimento em Jacarepagu?</div>
+                            <div class="location-bullet">Regi?o de Rio das Pedras</div>
+                            <div class="location-bullet">Agendamento com hor?rio marcado</div>
+                            <div class="location-bullet">Localiza??o enviada no WhatsApp</div>
+                        </div>
+                        <div class="location-actions">
+                            <a class="btn btn-whatsapp glow-btn" data-wa-message="Ol?! Gostaria de receber a localiza??o e consultar hor?rios dispon?veis." href="#">
+                                <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.52 3.48A11.8 11.8 0 0 0 12.07 0C5.55 0 .23 5.3.23 11.83c0 2.08.54 4.11 1.56 5.9L0 24l6.44-1.69a11.8 11.8 0 0 0 5.63 1.44h.01c6.52 0 11.84-5.31 11.84-11.84 0-3.16-1.23-6.13-3.4-8.43Zm-8.45 18.27h-.01a9.94 9.94 0 0 1-5.08-1.39l-.36-.22-3.82 1 1.02-3.72-.24-.38a9.92 9.92 0 0 1-1.52-5.21c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.92a9.86 9.86 0 0 1 2.9 7.02c0 5.48-4.46 9.92-9.94 9.92Zm5.45-7.42c-.3-.15-1.79-.88-2.07-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.51-.9-.8-1.51-1.8-1.68-2.1-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5l-.57-.01c-.2 0-.52.07-.8.38-.27.3-1.05 1.03-1.05 2.52 0 1.48 1.07 2.92 1.22 3.12.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.71.64.72.23 1.37.2 1.88.12.57-.08 1.79-.73 2.04-1.43.25-.7.25-1.3.18-1.43-.08-.12-.27-.2-.57-.35Z"/></svg>
+                                Pedir localiza??o no WhatsApp
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1883,8 +2119,14 @@
         <div class="container">
             <div class="cta-box fade-up">
                 <span class="eyebrow">Agendamento</span>
-                <h2 class="section-title">Seu próximo horário pode começar com uma mensagem.</h2>
-                <p>Fale pelo WhatsApp e consulte os horários disponíveis para cuidar das suas unhas com capricho, delicadeza e atenção aos detalhes.</p>
+                <div class="scarcity-badge">Ultimas vagas da semana</div>
+                <h2 class="section-title">Seu proximo horario pode comecar com uma mensagem.</h2>
+                <p>Fale pelo WhatsApp e consulte os horarios disponiveis para cuidar das suas unhas com capricho, delicadeza e atencao aos detalhes.</p>
+                <div class="scarcity-grid">
+                    <div class="scarcity-item">Agenda com vagas limitadas na semana.</div>
+                    <div class="scarcity-item">Horarios disponiveis mediante consulta no WhatsApp.</div>
+                    <div class="scarcity-item">Atendimentos com hora marcada e disponibilidade reduzida.</div>
+                </div>
                 <div class="pill-list" style="justify-content: center; margin-top: 1.5rem;">
                     <span class="pill">Nail Designer</span>
                     <span class="pill">Manicure</span>
@@ -1892,13 +2134,11 @@
                     <span class="pill">Rio das Pedras</span>
                 </div>
                 <div class="cta-actions">
-                    <a class="btn btn-whatsapp glow-btn" data-wa-message="Olá! Vi sua página e gostaria de consultar horários para fazer minhas unhas." href="#">
-                        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                            <path d="M20.52 3.48A11.8 11.8 0 0 0 12.07 0C5.55 0 .23 5.3.23 11.83c0 2.08.54 4.11 1.56 5.9L0 24l6.44-1.69a11.8 11.8 0 0 0 5.63 1.44h.01c6.52 0 11.84-5.31 11.84-11.84 0-3.16-1.23-6.13-3.4-8.43Zm-8.45 18.27h-.01a9.94 9.94 0 0 1-5.08-1.39l-.36-.22-3.82 1 1.02-3.72-.24-.38a9.92 9.92 0 0 1-1.52-5.21c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.92a9.86 9.86 0 0 1 2.9 7.02c0 5.48-4.46 9.92-9.94 9.92Zm5.45-7.42c-.3-.15-1.79-.88-2.07-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.51-.9-.8-1.51-1.8-1.68-2.1-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5l-.57-.01c-.2 0-.52.07-.8.38-.27.3-1.05 1.03-1.05 2.52 0 1.48 1.07 2.92 1.22 3.12.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.71.64.72.23 1.37.2 1.88.12.57-.08 1.79-.73 2.04-1.43.25-.7.25-1.3.18-1.43-.08-.12-.27-.2-.57-.35Z"/>
-                        </svg>
+                    <a class="btn btn-whatsapp glow-btn" data-wa-message="Ola! Vi sua pagina e gostaria de consultar horarios para fazer minhas unhas." href="#">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.52 3.48A11.8 11.8 0 0 0 12.07 0C5.55 0 .23 5.3.23 11.83c0 2.08.54 4.11 1.56 5.9L0 24l6.44-1.69a11.8 11.8 0 0 0 5.63 1.44h.01c6.52 0 11.84-5.31 11.84-11.84 0-3.16-1.23-6.13-3.4-8.43Zm-8.45 18.27h-.01a9.94 9.94 0 0 1-5.08-1.39l-.36-.22-3.82 1 1.02-3.72-.24-.38a9.92 9.92 0 0 1-1.52-5.21c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.92a9.86 9.86 0 0 1 2.9 7.02c0 5.48-4.46 9.92-9.94 9.92Zm5.45-7.42c-.3-.15-1.79-.88-2.07-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.51-.9-.8-1.51-1.8-1.68-2.1-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5l-.57-.01c-.2 0-.52.07-.8.38-.27.3-1.05 1.03-1.05 2.52 0 1.48 1.07 2.92 1.22 3.12.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.71.64.72.23 1.37.2 1.88.12.57-.08 1.79-.73 2.04-1.43.25-.7.25-1.3.18-1.43-.08-.12-.27-.2-.57-.35Z"/></svg>
                         Agendar agora pelo WhatsApp
                     </a>
-                    <a class="btn btn-champagne glow-btn" href="#portfolio">Ver inspirações</a>
+                    <a class="btn btn-champagne glow-btn" href="#portfolio">Ver inspiracoes</a>
                 </div>
             </div>
         </div>
@@ -1938,7 +2178,7 @@
     <script>
         const whatsappNumber = "5521982642608";
         const instagramUrl = "https://www.instagram.com/karolaynerodriguesnails/";
-        const defaultWhatsappMessage = "Olá! Vi sua página e gostaria de consultar horários para fazer minhas unhas.";
+        const defaultWhatsappMessage = "Ola! Vi sua pagina e gostaria de consultar horarios para fazer minhas unhas.";
 
         function buildWhatsappUrl(message) {
             return "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message || defaultWhatsappMessage);
@@ -1983,11 +2223,9 @@
             });
 
             revealItems.forEach((item) => {
-                if (item.classList.contains("is-visible")) {
-                    return;
+                if (!item.classList.contains("is-visible")) {
+                    observer.observe(item);
                 }
-
-                observer.observe(item);
             });
         }
 
@@ -2010,8 +2248,7 @@
 
                     questions.forEach((item) => {
                         item.setAttribute("aria-expanded", "false");
-                        const answer = item.nextElementSibling;
-                        answer.style.maxHeight = null;
+                        item.nextElementSibling.style.maxHeight = null;
                     });
 
                     if (!isExpanded) {
@@ -2023,6 +2260,57 @@
             });
         }
 
+        function setupQuiz() {
+            const form = document.getElementById("pre-attendance-quiz");
+            const submit = document.getElementById("quiz-submit");
+            const summary = document.getElementById("quiz-summary");
+
+            if (!form || !submit || !summary) {
+                return;
+            }
+
+            const updateQuiz = () => {
+                const data = new FormData(form);
+                const service = data.get("service");
+                const style = data.get("style");
+                const schedule = data.get("schedule");
+                const firstVisit = data.get("firstVisit");
+                const complete = service && style && schedule && firstVisit;
+
+                if (!complete) {
+                    submit.setAttribute("aria-disabled", "true");
+                    submit.removeAttribute("target");
+                    submit.removeAttribute("rel");
+                    submit.href = "#";
+                    summary.textContent = "Selecione uma opcao em cada etapa para gerar uma mensagem pronta e acelerar seu atendimento no WhatsApp.";
+                    return;
+                }
+
+                const message = [
+                    "Ola! Fiz o pre-atendimento no site.",
+                    "Servico: " + service,
+                    "Estilo: " + style,
+                    "Quando deseja agendar: " + schedule,
+                    "Primeiro atendimento: " + firstVisit,
+                    "Gostaria de consultar disponibilidade."
+                ].join("\\n");
+
+                submit.setAttribute("aria-disabled", "false");
+                submit.href = buildWhatsappUrl(message);
+                submit.target = "_blank";
+                submit.rel = "noopener noreferrer";
+                summary.textContent = "Servico: " + service + " | Estilo: " + style + " | Quando: " + schedule + " | Primeiro atendimento: " + firstVisit + ".";
+            };
+
+            form.addEventListener("change", updateQuiz);
+            submit.addEventListener("click", (event) => {
+                if (submit.getAttribute("aria-disabled") === "true") {
+                    event.preventDefault();
+                }
+            });
+            updateQuiz();
+        }
+
         function setupPreloader() {
             const preloader = document.getElementById("preloader");
             const minimumDuration = 1100;
@@ -2031,7 +2319,6 @@
             window.addEventListener("load", () => {
                 const elapsed = performance.now() - start;
                 const delay = Math.max(0, minimumDuration - elapsed);
-
                 window.setTimeout(() => {
                     preloader.classList.add("is-hidden");
                 }, delay);
@@ -2043,6 +2330,7 @@
             setupObserver();
             setupNavbar();
             setupFaq();
+            setupQuiz();
             document.getElementById("current-year").textContent = String(new Date().getFullYear());
         }
 
