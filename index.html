@@ -1,0 +1,2053 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karolayne Rodrigues Nails | Amor em forma de unhas</title>
+    <meta name="description" content="Atendimento de nail designer, manicure, pedicure e banho de gel em Rio das Pedras, Jacarepaguá-RJ. Agende pelo WhatsApp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #09070a;
+            --bg-soft: #151116;
+            --panel: rgba(24, 18, 25, 0.72);
+            --panel-solid: #18121a;
+            --cream: #f3e6d8;
+            --beige: #ddc8b2;
+            --champagne: #cfaf86;
+            --champagne-strong: #e2c49a;
+            --brown: #7b5b45;
+            --white: #fff8f0;
+            --muted: #ccbdae;
+            --muted-deep: #9f9387;
+            --line: rgba(232, 210, 186, 0.18);
+            --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+            --radius-lg: 34px;
+            --radius-md: 24px;
+            --radius-sm: 18px;
+            --container: 1180px;
+            --font-title: "Cormorant Garamond", serif;
+            --font-text: "Manrope", sans-serif;
+            --ease: cubic-bezier(0.22, 1, 0.36, 1);
+            --wa-green: #25d366;
+            --wa-green-deep: #1ca953;
+            --fab-offset: calc(env(safe-area-inset-bottom, 0px) + 18px);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-text);
+            background:
+                radial-gradient(circle at top, rgba(207, 175, 134, 0.12), transparent 28%),
+                linear-gradient(180deg, #09070a 0%, #0f0b11 36%, #08070a 100%);
+            color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--champagne-strong);
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        .container {
+            width: min(var(--container), calc(100% - 2rem));
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            max-width: 760px;
+            margin: 0 auto 2.6rem;
+            text-align: center;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--champagne);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+        }
+
+        .section-title,
+        h1,
+        h2,
+        h3 {
+            font-family: var(--font-title);
+            font-weight: 600;
+            line-height: 1.05;
+            letter-spacing: -0.02em;
+        }
+
+        .section-title {
+            font-size: clamp(2.2rem, 5vw, 3.6rem);
+            margin-top: 0.95rem;
+        }
+
+        .section-subtitle {
+            margin-top: 1rem;
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.72rem;
+            min-height: 54px;
+            padding: 0.95rem 1.45rem;
+            border: 1px solid transparent;
+            border-radius: 999px;
+            font-size: 0.97rem;
+            font-weight: 700;
+            transition:
+                transform 0.35s var(--ease),
+                box-shadow 0.35s var(--ease),
+                background-color 0.35s var(--ease),
+                color 0.35s var(--ease),
+                border-color 0.35s var(--ease);
+            will-change: transform;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn svg {
+            flex: 0 0 auto;
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, var(--wa-green) 0%, var(--wa-green-deep) 100%);
+            color: #fff;
+            box-shadow: 0 18px 34px rgba(37, 211, 102, 0.22);
+        }
+
+        .btn-whatsapp:hover {
+            box-shadow: 0 22px 38px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-champagne {
+            background: linear-gradient(135deg, rgba(226, 196, 154, 0.98), rgba(202, 171, 129, 0.95));
+            color: #22171d;
+            box-shadow: 0 18px 34px rgba(207, 175, 134, 0.2);
+        }
+
+        .btn-champagne:hover {
+            box-shadow: 0 22px 38px rgba(207, 175, 134, 0.3);
+        }
+
+        .btn-outline {
+            border-color: rgba(232, 210, 186, 0.34);
+            background: rgba(255, 248, 240, 0.04);
+            color: var(--white);
+        }
+
+        .btn-outline:hover {
+            border-color: rgba(232, 210, 186, 0.64);
+            background: rgba(255, 248, 240, 0.08);
+        }
+
+        .btn-soft {
+            min-height: 48px;
+            padding: 0.8rem 1.15rem;
+            font-size: 0.92rem;
+        }
+
+        .glow-btn {
+            position: relative;
+            isolation: isolate;
+        }
+
+        .glow-btn::after {
+            content: "";
+            position: absolute;
+            inset: auto 12% -12px;
+            height: 18px;
+            background: radial-gradient(circle, rgba(207, 175, 134, 0.34), transparent 70%);
+            filter: blur(10px);
+            opacity: 0.75;
+            z-index: -1;
+            transition: opacity 0.35s var(--ease);
+        }
+
+        .glow-btn:hover::after {
+            opacity: 1;
+        }
+
+        .pill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.72rem 1rem;
+            border: 1px solid rgba(232, 210, 186, 0.2);
+            border-radius: 999px;
+            background: rgba(255, 248, 240, 0.06);
+            backdrop-filter: blur(10px);
+            color: var(--white);
+            font-size: 0.88rem;
+        }
+
+        .pill::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--champagne-strong), var(--champagne));
+            box-shadow: 0 0 12px rgba(207, 175, 134, 0.6);
+        }
+
+        .reveal,
+        .fade-up {
+            opacity: 0;
+            transform: translateY(28px);
+            transition:
+                opacity 0.8s var(--ease),
+                transform 0.8s var(--ease);
+            transition-delay: var(--delay, 0ms);
+        }
+
+        .reveal.is-visible,
+        .fade-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #preloader {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            display: grid;
+            place-items: center;
+            background:
+                radial-gradient(circle at center, rgba(207, 175, 134, 0.12), transparent 35%),
+                rgba(9, 7, 10, 0.98);
+            transition: opacity 0.55s ease, visibility 0.55s ease;
+        }
+
+        #preloader.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .preloader-box {
+            display: grid;
+            justify-items: center;
+            gap: 1rem;
+            transform: scale(0.92);
+            opacity: 0;
+            animation: preloader-enter 0.65s var(--ease) forwards;
+        }
+
+        .preloader-mark {
+            width: 108px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: radial-gradient(circle at 30% 30%, #fff5e8 0%, var(--cream) 45%, #d8bea1 100%);
+            color: #3f291d;
+            font-family: var(--font-title);
+            font-size: 2.2rem;
+            font-weight: 700;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow:
+                0 0 0 12px rgba(207, 175, 134, 0.05),
+                0 18px 42px rgba(0, 0, 0, 0.35);
+        }
+
+        .preloader-title {
+            font-family: var(--font-title);
+            font-size: 1.45rem;
+            color: var(--cream);
+        }
+
+        .preloader-copy {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .preloader-track {
+            width: min(240px, 72vw);
+            height: 6px;
+            border-radius: 999px;
+            background: rgba(255, 248, 240, 0.08);
+            overflow: hidden;
+        }
+
+        .preloader-progress {
+            width: 0;
+            height: 100%;
+            border-radius: inherit;
+            background: linear-gradient(90deg, var(--beige), var(--champagne-strong), var(--champagne));
+            animation: preloader-load 1.15s var(--ease) forwards;
+        }
+
+        @keyframes preloader-enter {
+            from {
+                opacity: 0;
+                transform: scale(0.92);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes preloader-load {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes pulse-fab {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.28);
+            }
+
+            70% {
+                box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        @keyframes marquee-left {
+            from {
+                transform: translate3d(0, 0, 0);
+            }
+
+            to {
+                transform: translate3d(-50%, 0, 0);
+            }
+        }
+
+        @keyframes marquee-right {
+            from {
+                transform: translate3d(-50%, 0, 0);
+            }
+
+            to {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1200;
+            padding: 1rem 0;
+            transition:
+                background-color 0.35s var(--ease),
+                padding 0.35s var(--ease),
+                border-color 0.35s var(--ease),
+                backdrop-filter 0.35s var(--ease);
+        }
+
+        .navbar.is-scrolled {
+            padding: 0.72rem 0;
+            background: rgba(9, 7, 10, 0.72);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(14px);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.85rem;
+            min-width: 0;
+        }
+
+        .brand-mark {
+            width: 42px;
+            aspect-ratio: 1;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: linear-gradient(145deg, rgba(243, 230, 216, 0.94), rgba(211, 182, 145, 0.95));
+            color: #41291d;
+            font-family: var(--font-title);
+            font-size: 1.05rem;
+            font-weight: 700;
+            box-shadow: 0 12px 22px rgba(0, 0, 0, 0.2);
+        }
+
+        .brand-text {
+            min-width: 0;
+        }
+
+        .brand-title {
+            display: block;
+            font-family: var(--font-title);
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        .brand-subtitle {
+            display: block;
+            color: var(--muted);
+            font-size: 0.76rem;
+            margin-top: 0.15rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .nav-cta {
+            display: none;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100svh;
+            display: flex;
+            align-items: stretch;
+            isolation: isolate;
+            overflow: clip;
+        }
+
+        .hero-media,
+        .hero-media img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-media img {
+            object-fit: cover;
+            object-position: 72% center;
+            filter: saturate(0.95) contrast(1.02);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background:
+                linear-gradient(90deg, rgba(9, 7, 10, 0.96) 0%, rgba(9, 7, 10, 0.88) 34%, rgba(9, 7, 10, 0.48) 58%, rgba(9, 7, 10, 0.08) 100%),
+                linear-gradient(180deg, rgba(9, 7, 10, 0.18) 0%, rgba(9, 7, 10, 0.5) 100%);
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: auto auto 7% -8%;
+            width: 240px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(207, 175, 134, 0.18), transparent 70%);
+            filter: blur(16px);
+            z-index: 1;
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            min-height: 100svh;
+            padding: 7.5rem 0 4rem;
+        }
+
+        .hero-copy {
+            width: min(100%, 640px);
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            margin: 1rem 0 1rem;
+            text-wrap: balance;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: var(--cream);
+            font-size: 1.02rem;
+        }
+
+        .hero-actions {
+            display: grid;
+            gap: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        .hero-badges {
+            margin-top: 2rem;
+        }
+
+        .hero-note {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            margin-top: 1.6rem;
+            color: rgba(255, 248, 240, 0.84);
+            font-size: 0.9rem;
+        }
+
+        .hero-note svg {
+            color: var(--champagne-strong);
+        }
+
+        .specialist {
+            position: relative;
+        }
+
+        .specialist-card {
+            display: grid;
+            gap: 2rem;
+            padding: 1.4rem;
+            border-radius: var(--radius-lg);
+            background:
+                linear-gradient(180deg, rgba(255, 248, 240, 0.03), rgba(255, 248, 240, 0.01)),
+                rgba(18, 14, 20, 0.78);
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow);
+        }
+
+        .specialist-visual {
+            position: relative;
+            border-radius: 30px;
+            overflow: hidden;
+            aspect-ratio: 4 / 5;
+            border: 1px solid rgba(232, 210, 186, 0.16);
+            box-shadow:
+                0 0 0 1px rgba(232, 210, 186, 0.08),
+                0 0 40px rgba(207, 175, 134, 0.12),
+                0 24px 42px rgba(0, 0, 0, 0.25);
+        }
+
+        .specialist-visual::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 32%;
+            background: linear-gradient(180deg, transparent, rgba(9, 7, 10, 0.6));
+        }
+
+        .specialist-visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .specialist-ring {
+            position: absolute;
+            right: -14px;
+            bottom: -14px;
+            width: 102px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(145deg, rgba(243, 230, 216, 0.98), rgba(207, 175, 134, 0.94));
+            color: #40281d;
+            border: 8px solid rgba(9, 7, 10, 0.9);
+            box-shadow: 0 18px 28px rgba(0, 0, 0, 0.25);
+            font-family: var(--font-title);
+            font-size: 1.1rem;
+        }
+
+        .specialist-copy h2 {
+            font-size: clamp(2.4rem, 4vw, 3.6rem);
+        }
+
+        .specialist-copy p {
+            margin-top: 1rem;
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .specialist-quote {
+            margin-top: 1.5rem;
+            padding-left: 1.1rem;
+            border-left: 2px solid rgba(207, 175, 134, 0.7);
+            color: var(--cream);
+            font-size: 1.08rem;
+        }
+
+        .specialist-actions {
+            margin-top: 1.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+        }
+
+        .services {
+            background:
+                radial-gradient(circle at 20% 0%, rgba(207, 175, 134, 0.1), transparent 22%),
+                linear-gradient(180deg, #f1e5d8 0%, #ebdece 100%);
+            color: #2f2018;
+        }
+
+        .services .section-subtitle {
+            color: rgba(47, 32, 24, 0.74);
+        }
+
+        .services-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .service-card {
+            position: relative;
+            padding: 1.4rem;
+            border-radius: 28px;
+            background: rgba(255, 250, 244, 0.7);
+            border: 1px solid rgba(123, 91, 69, 0.12);
+            box-shadow: 0 18px 34px rgba(123, 91, 69, 0.08);
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: "";
+            position: absolute;
+            inset: -60% auto auto -10%;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(207, 175, 134, 0.22), transparent 70%);
+        }
+
+        .service-icon {
+            position: relative;
+            z-index: 1;
+            width: 56px;
+            aspect-ratio: 1;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: linear-gradient(145deg, rgba(207, 175, 134, 0.18), rgba(207, 175, 134, 0.05));
+            color: var(--brown);
+            border: 1px solid rgba(207, 175, 134, 0.38);
+            box-shadow: 0 0 24px rgba(207, 175, 134, 0.18);
+        }
+
+        .service-card h3 {
+            position: relative;
+            z-index: 1;
+            margin-top: 1rem;
+            font-size: 1.7rem;
+        }
+
+        .service-card p {
+            position: relative;
+            z-index: 1;
+            margin-top: 0.65rem;
+            color: rgba(47, 32, 24, 0.8);
+            font-size: 0.96rem;
+        }
+
+        .services-line {
+            margin-top: 1.8rem;
+            padding: 0.95rem 1.2rem;
+            border-radius: 999px;
+            border: 1px solid rgba(123, 91, 69, 0.12);
+            background: rgba(255, 250, 244, 0.55);
+            text-align: center;
+            color: rgba(47, 32, 24, 0.8);
+            font-size: 0.94rem;
+            font-weight: 600;
+        }
+
+        .roller {
+            overflow: hidden;
+            border-top: 1px solid rgba(232, 210, 186, 0.1);
+            border-bottom: 1px solid rgba(232, 210, 186, 0.1);
+            background: rgba(255, 248, 240, 0.04);
+        }
+
+        .roller.is-light {
+            background: #f0e2d2;
+            border-color: rgba(123, 91, 69, 0.1);
+            color: #473124;
+        }
+
+        .roller-track {
+            display: flex;
+            width: max-content;
+            min-width: 100%;
+            animation: marquee-left 26s linear infinite;
+        }
+
+        .roller-track.reverse {
+            animation-name: marquee-right;
+            animation-duration: 28s;
+        }
+
+        .roller-group {
+            display: flex;
+            flex-shrink: 0;
+            min-width: 100%;
+            justify-content: space-around;
+            gap: 1.4rem;
+            padding: 1rem 1.1rem;
+        }
+
+        .roller-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            white-space: nowrap;
+            font-family: var(--font-title);
+            font-size: 1.16rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+        }
+
+        .roller-item::after {
+            content: "•";
+            opacity: 0.6;
+        }
+
+        .portfolio,
+        .testimonials {
+            position: relative;
+        }
+
+        .carousel-shell {
+            overflow: hidden;
+            width: 100%;
+            margin-top: 2rem;
+            mask-image: linear-gradient(90deg, transparent 0, black 6%, black 94%, transparent 100%);
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 1.15rem;
+            width: max-content;
+            animation: marquee-left 34s linear infinite;
+            will-change: transform;
+        }
+
+        .carousel-track.reverse {
+            animation-name: marquee-right;
+            animation-duration: 36s;
+        }
+
+        .carousel-shell:hover .carousel-track {
+            animation-play-state: paused;
+        }
+
+        .portfolio-card {
+            width: min(82vw, 294px);
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border-radius: 28px;
+            background: linear-gradient(180deg, rgba(255, 248, 240, 0.05), rgba(255, 248, 240, 0.02));
+            border: 1px solid rgba(232, 210, 186, 0.14);
+            box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
+        }
+
+        .portfolio-image {
+            position: relative;
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(232, 210, 186, 0.12);
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s var(--ease);
+        }
+
+        .portfolio-card:hover .portfolio-image img {
+            transform: scale(1.04);
+        }
+
+        .portfolio-tag {
+            position: absolute;
+            top: 0.9rem;
+            right: 0.9rem;
+            padding: 0.45rem 0.8rem;
+            border-radius: 999px;
+            background: rgba(9, 7, 10, 0.78);
+            border: 1px solid rgba(232, 210, 186, 0.18);
+            color: var(--champagne-strong);
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            backdrop-filter: blur(10px);
+        }
+
+        .portfolio-body {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            padding: 1.15rem;
+        }
+
+        .portfolio-body h3 {
+            font-size: 1.45rem;
+        }
+
+        .portfolio-body p {
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+
+        .testimonials .section-subtitle {
+            max-width: 640px;
+        }
+
+        .testimonial-card {
+            width: min(86vw, 360px);
+            flex: 0 0 auto;
+            padding: 1.5rem;
+            border-radius: 28px;
+            background: linear-gradient(180deg, #f7ede0 0%, #f1e2d2 100%);
+            color: #3c291d;
+            border: 1px solid rgba(123, 91, 69, 0.12);
+            box-shadow: 0 18px 34px rgba(0, 0, 0, 0.12);
+        }
+
+        .testimonial-stars {
+            display: inline-flex;
+            gap: 0.15rem;
+            color: var(--champagne);
+        }
+
+        .testimonial-quote {
+            position: relative;
+            margin-top: 1rem;
+            font-family: var(--font-title);
+            font-size: 1.55rem;
+            line-height: 1.12;
+        }
+
+        .testimonial-quote::before {
+            content: "“";
+            position: absolute;
+            top: -1.1rem;
+            left: -0.35rem;
+            color: rgba(207, 175, 134, 0.42);
+            font-size: 4rem;
+            line-height: 1;
+        }
+
+        .testimonial-author {
+            margin-top: 1.2rem;
+            font-size: 0.9rem;
+            color: rgba(60, 41, 29, 0.72);
+            font-weight: 700;
+        }
+
+        .booking-steps {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .booking-step {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 1.2rem;
+            border-radius: 24px;
+            border: 1px solid var(--line);
+            background: rgba(255, 248, 240, 0.04);
+        }
+
+        .booking-step-number {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            flex: 0 0 auto;
+            background: linear-gradient(145deg, rgba(243, 230, 216, 0.98), rgba(207, 175, 134, 0.94));
+            color: #3f291d;
+            font-family: var(--font-title);
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .booking-step strong {
+            display: block;
+            font-size: 1rem;
+            color: var(--white);
+        }
+
+        .booking-step span {
+            display: block;
+            margin-top: 0.28rem;
+            color: var(--muted);
+            font-size: 0.93rem;
+        }
+
+        .location-card {
+            position: relative;
+            overflow: hidden;
+            padding: 2rem 1.4rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(232, 210, 186, 0.14);
+            background:
+                linear-gradient(180deg, rgba(245, 234, 221, 0.98), rgba(238, 225, 210, 0.98));
+            color: #39271d;
+            box-shadow: 0 24px 54px rgba(0, 0, 0, 0.14);
+        }
+
+        .location-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(rgba(123, 91, 69, 0.12) 1px, transparent 1px),
+                radial-gradient(rgba(123, 91, 69, 0.07) 1px, transparent 1px);
+            background-size: 28px 28px, 28px 28px;
+            background-position: 0 0, 14px 14px;
+            opacity: 0.6;
+        }
+
+        .location-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .location-pin {
+            width: 74px;
+            height: 74px;
+            margin-bottom: 1.4rem;
+            border-radius: 50% 50% 50% 0;
+            transform: rotate(-45deg);
+            background: linear-gradient(145deg, var(--champagne-strong), var(--champagne));
+            box-shadow: 0 16px 28px rgba(123, 91, 69, 0.18);
+            display: grid;
+            place-items: center;
+        }
+
+        .location-pin::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            transform: rotate(45deg);
+            background: #f7ede0;
+        }
+
+        .location-card h2 {
+            font-size: clamp(2.2rem, 4vw, 3.3rem);
+            max-width: 640px;
+        }
+
+        .location-card p {
+            max-width: 620px;
+            margin-top: 1rem;
+            color: rgba(57, 39, 29, 0.76);
+        }
+
+        .location-actions {
+            margin-top: 1.6rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+        }
+
+        .faq-wrap {
+            display: grid;
+            gap: 0.9rem;
+        }
+
+        .faq-item {
+            border-radius: 22px;
+            border: 1px solid rgba(232, 210, 186, 0.12);
+            background: rgba(255, 248, 240, 0.03);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.15rem 1.2rem;
+            background: transparent;
+            border: 0;
+            color: var(--white);
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .faq-question span:first-child {
+            font-family: var(--font-title);
+            font-size: 1.45rem;
+        }
+
+        .faq-icon {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            flex: 0 0 auto;
+            color: var(--champagne-strong);
+            border: 1px solid rgba(232, 210, 186, 0.14);
+            transition: transform 0.35s var(--ease);
+        }
+
+        .faq-question[aria-expanded="true"] .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s var(--ease);
+        }
+
+        .faq-answer p {
+            padding: 0 1.2rem 1.2rem;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .cta-box {
+            position: relative;
+            overflow: hidden;
+            padding: 2rem 1.4rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(232, 210, 186, 0.12);
+            background:
+                linear-gradient(180deg, rgba(255, 248, 240, 0.05), rgba(255, 248, 240, 0.02)),
+                rgba(18, 14, 20, 0.9);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .cta-box::before {
+            content: "";
+            position: absolute;
+            width: 280px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            inset: -110px auto auto 50%;
+            transform: translateX(-50%);
+            background: radial-gradient(circle, rgba(207, 175, 134, 0.16), transparent 70%);
+        }
+
+        .cta-box > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-box p {
+            max-width: 660px;
+            margin: 1rem auto 0;
+            color: var(--muted);
+        }
+
+        .cta-actions {
+            margin-top: 1.8rem;
+            display: grid;
+            gap: 0.9rem;
+            justify-content: center;
+        }
+
+        .footer {
+            padding: 3rem 0 calc(8rem + env(safe-area-inset-bottom, 0px));
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(8, 7, 10, 0.96);
+        }
+
+        .footer-inner {
+            text-align: center;
+        }
+
+        .footer-mark {
+            width: 68px;
+            aspect-ratio: 1;
+            margin: 0 auto 1rem;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: linear-gradient(145deg, rgba(243, 230, 216, 0.98), rgba(207, 175, 134, 0.94));
+            color: #3f291d;
+            font-family: var(--font-title);
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .footer-title {
+            font-family: var(--font-title);
+            font-size: 2rem;
+        }
+
+        .footer-copy {
+            margin-top: 0.45rem;
+            color: var(--champagne);
+        }
+
+        .footer-meta {
+            margin-top: 1rem;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.9rem;
+            margin-top: 1.4rem;
+        }
+
+        .footer-links a {
+            padding: 0.7rem 1rem;
+            border-radius: 999px;
+            border: 1px solid rgba(232, 210, 186, 0.14);
+            background: rgba(255, 248, 240, 0.03);
+        }
+
+        .footer-small {
+            margin-top: 1.5rem;
+            color: rgba(255, 248, 240, 0.38);
+            font-size: 0.85rem;
+        }
+
+        .floating-stack {
+            position: fixed;
+            right: 1rem;
+            bottom: var(--fab-offset);
+            z-index: 1300;
+            display: grid;
+            gap: 0.7rem;
+            justify-items: end;
+        }
+
+        .floating-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.65rem;
+            min-width: 56px;
+            min-height: 56px;
+            padding: 0 1rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 18px 30px rgba(0, 0, 0, 0.24);
+            backdrop-filter: blur(14px);
+        }
+
+        .floating-link span {
+            display: none;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .floating-instagram {
+            background: rgba(243, 230, 216, 0.96);
+            color: #4b3325;
+        }
+
+        .floating-whatsapp {
+            background: linear-gradient(135deg, var(--wa-green), var(--wa-green-deep));
+            color: #fff;
+            animation: pulse-fab 2.3s infinite;
+        }
+
+        @media (max-width: 767.98px) {
+            .carousel-shell {
+                overflow-x: auto;
+                padding-bottom: 0.4rem;
+                mask-image: none;
+                scroll-snap-type: x proximity;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .carousel-shell::-webkit-scrollbar {
+                height: 8px;
+            }
+
+            .carousel-shell::-webkit-scrollbar-thumb {
+                background: rgba(232, 210, 186, 0.2);
+                border-radius: 999px;
+            }
+
+            .carousel-track,
+            .carousel-track.reverse {
+                animation: none;
+                padding-right: 1rem;
+            }
+
+            .portfolio-card,
+            .testimonial-card {
+                scroll-snap-align: start;
+            }
+
+            .roller-track,
+            .roller-track.reverse {
+                animation-duration: 18s;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .section {
+                padding: 6.5rem 0;
+            }
+
+            .hero-actions,
+            .cta-actions {
+                grid-auto-flow: column;
+                grid-auto-columns: max-content;
+                justify-content: flex-start;
+            }
+
+            .specialist-card {
+                grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1.1fr);
+                align-items: center;
+                padding: 1.8rem;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .booking-steps {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .footer {
+                padding-bottom: 5rem;
+            }
+
+            .floating-link span {
+                display: inline;
+            }
+        }
+
+        @media (min-width: 960px) {
+            .nav-cta {
+                display: inline-flex;
+            }
+
+            .hero-media img {
+                object-position: right center;
+            }
+
+            .hero h1 {
+                max-width: 10ch;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            .booking-steps {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader" aria-hidden="true">
+        <div class="preloader-box">
+            <div class="preloader-mark">KR</div>
+            <div class="preloader-title">Amor em forma de unhas</div>
+            <div class="preloader-copy">Preparando sua experiência...</div>
+            <div class="preloader-track">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#topo" class="brand" aria-label="Karolayne Rodrigues Nails">
+                <span class="brand-mark">KR</span>
+                <span class="brand-text">
+                    <span class="brand-title">Karolayne Rodrigues Nails</span>
+                    <span class="brand-subtitle">Rio das Pedras • Jacarepaguá</span>
+                </span>
+            </a>
+            <a class="btn btn-whatsapp btn-soft glow-btn nav-cta" data-wa-message="Olá! Vi sua página e gostaria de consultar horários para fazer minhas unhas." href="#">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path d="M20.52 3.48A11.8 11.8 0 0 0 12.07 0C5.55 0 .23 5.3.23 11.83c0 2.08.54 4.11 1.56 5.9L0 24l6.44-1.69a11.8 11.8 0 0 0 5.63 1.44h.01c6.52 0 11.84-5.31 11.84-11.84 0-3.16-1.23-6.13-3.4-8.43Zm-8.45 18.27h-.01a9.94 9.94 0 0 1-5.08-1.39l-.36-.22-3.82 1 1.02-3.72-.24-.38a9.92 9.92 0 0 1-1.52-5.21c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.92a9.86 9.86 0 0 1 2.9 7.02c0 5.48-4.46 9.92-9.94 9.92Zm5.45-7.42c-.3-.15-1.79-.88-2.07-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.51-.9-.8-1.51-1.8-1.68-2.1-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5l-.57-.01c-.2 0-.52.07-.8.38-.27.3-1.05 1.03-1.05 2.52 0 1.48 1.07 2.92 1.22 3.12.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.71.64.72.23 1.37.2 1.88.12.57-.08 1.79-.73 2.04-1.43.25-.7.25-1.3.18-1.43-.08-.12-.27-.2-.57-.35Z"/>
+                </svg>
+                Agendar pelo WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero" id="topo">
+        <div class="hero-media" aria-hidden="true">
+            <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/46d6176b-d217-4027-90cb-a5ba372f087a_xkob96.webp" alt="">
+        </div>
+        <div class="container hero-inner">
+            <div class="hero-copy fade-up is-visible">
+                <span class="eyebrow">RJ • Jacarepaguá • Rio das Pedras</span>
+                <h1>Amor em forma de unhas, com cuidado em cada detalhe.</h1>
+                <p>Atendimento de nail designer, manicure e pedicure para quem busca unhas bem cuidadas, acabamento delicado e uma experiência feita com capricho do início ao fim.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-whatsapp glow-btn" data-wa-message="Olá! Vi sua página e gostaria de consultar horários para fazer minhas unhas." href="#">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                            <path d="M20.52 3.48A11.8 11.8 0 0 0 12.07 0C5.55 0 .23 5.3.23 11.83c0 2.08.54 4.11 1.56 5.9L0 24l6.44-1.69a11.8 11.8 0 0 0 5.63 1.44h.01c6.52 0 11.84-5.31 11.84-11.84 0-3.16-1.23-6.13-3.4-8.43Zm-8.45 18.27h-.01a9.94 9.94 0 0 1-5.08-1.39l-.36-.22-3.82 1 1.02-3.72-.24-.38a9.92 9.92 0 0 1-1.52-5.21c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.92a9.86 9.86 0 0 1 2.9 7.02c0 5.48-4.46 9.92-9.94 9.92Zm5.45-7.42c-.3-.15-1.79-.88-2.07-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.51-.9-.8-1.51-1.8-1.68-2.1-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5l-.57-.01c-.2 0-.52.07-.8.38-.27.3-1.05 1.03-1.05 2.52 0 1.48 1.07 2.92 1.22 3.12.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.71.64.72.23 1.37.2 1.88.12.57-.08 1.79-.73 2.04-1.43.25-.7.25-1.3.18-1.43-.08-.12-.27-.2-.57-.35Z"/>
+                        </svg>
+                        Agendar pelo WhatsApp
+                    </a>
+                    <a class="btn btn-champagne glow-btn" href="#portfolio">
+                        Ver trabalhos
+                    </a>
+                </div>
+                <div class="hero-badges pill-list">
+                    <span class="pill">Horário marcado</span>
+                    <span class="pill">Nail Designer</span>
+                    <span class="pill">Manicure e Pedicure</span>
+                    <span class="pill">Rio das Pedras</span>
+                </div>
+                <div class="hero-note">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M12 3 4 7v5c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V7l-8-4Z"></path>
+                    </svg>
+                    Atendimento feito com escuta, organização e acabamento delicado.
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section specialist">
+        <div class="container">
+            <div class="specialist-card reveal">
+                <div class="specialist-visual" style="--delay: 0ms;">
+                    <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782842077/Captura_de_tela_2026-06-30_145356_vwtxvx.webp" alt="A profissional responsável pelo atendimento de unhas">
+                    <div class="specialist-ring">KR</div>
+                </div>
+                <div class="specialist-copy">
+                    <span class="eyebrow reveal" style="--delay: 80ms;">Conheça a especialista</span>
+                    <h2 class="reveal" style="--delay: 140ms;">Um atendimento leve, delicado e pensado para você se sentir bem.</h2>
+                    <p class="reveal" style="--delay: 220ms;">Fazer as unhas também é sobre confiança, escuta e capricho. A proposta do atendimento é criar uma experiência leve, organizada e delicada, onde cada cliente possa se sentir cuidada do início ao fim.</p>
+                    <p class="specialist-quote reveal" style="--delay: 300ms;">Ofereço amor em forma de unhas</p>
+                    <div class="pill-list reveal" style="--delay: 380ms; margin-top: 1.5rem;">
+                        <span class="pill">Nail Designer</span>
+                        <span class="pill">Manicure</span>
+                        <span class="pill">Pedicure</span>
+                        <span class="pill">Rio das Pedras</span>
+                    </div>
+                    <div class="specialist-actions reveal" style="--delay: 460ms;">
+                        <a class="btn btn-whatsapp glow-btn" data-wa-message="Olá! Vi sua página e gostaria de consultar horários para fazer minhas unhas." href="#">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                <path d="M20.52 3.48A11.8 11.8 0 0 0 12.07 0C5.55 0 .23 5.3.23 11.83c0 2.08.54 4.11 1.56 5.9L0 24l6.44-1.69a11.8 11.8 0 0 0 5.63 1.44h.01c6.52 0 11.84-5.31 11.84-11.84 0-3.16-1.23-6.13-3.4-8.43Zm-8.45 18.27h-.01a9.94 9.94 0 0 1-5.08-1.39l-.36-.22-3.82 1 1.02-3.72-.24-.38a9.92 9.92 0 0 1-1.52-5.21c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.92a9.86 9.86 0 0 1 2.9 7.02c0 5.48-4.46 9.92-9.94 9.92Zm5.45-7.42c-.3-.15-1.79-.88-2.07-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.51-.9-.8-1.51-1.8-1.68-2.1-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5l-.57-.01c-.2 0-.52.07-.8.38-.27.3-1.05 1.03-1.05 2.52 0 1.48 1.07 2.92 1.22 3.12.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.71.64.72.23 1.37.2 1.88.12.57-.08 1.79-.73 2.04-1.43.25-.7.25-1.3.18-1.43-.08-.12-.27-.2-.57-.35Z"/>
+                            </svg>
+                            Conhecer horários disponíveis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section services">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="eyebrow">Serviços principais</span>
+                <h2 class="section-title">Quatro formas de cuidar das suas unhas com capricho.</h2>
+                <p class="section-subtitle">O atendimento valoriza acabamento delicado, cuidado com cada detalhe e uma experiência mais tranquila do começo ao fim.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card reveal" style="--delay: 0ms;">
+                    <div class="service-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7">
+                            <path d="M7 3v7a3 3 0 1 0 6 0V3"></path>
+                            <path d="M10 3v8"></path>
+                            <path d="M14 5v5"></path>
+                            <path d="M5 21h12"></path>
+                            <path d="M17 8c1 1 2 2.4 2 4.5 0 3.3-2.7 6.5-6 6.5H9"></path>
+                        </svg>
+                    </div>
+                    <h3>Manicure</h3>
+                    <p>Cuidado completo para mãos, preparo e acabamento delicado.</p>
+                </article>
+                <article class="service-card reveal" style="--delay: 100ms;">
+                    <div class="service-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7">
+                            <path d="M6 12c0-4 2.5-7 6-7s6 3 6 7-2.5 7-6 7-6-3-6-7Z"></path>
+                            <path d="M8 14c1.2.7 2.5 1 4 1 1.5 0 2.8-.3 4-1"></path>
+                            <path d="M9.5 10.5h.01"></path>
+                            <path d="M14.5 10.5h.01"></path>
+                        </svg>
+                    </div>
+                    <h3>Pedicure</h3>
+                    <p>Conforto, cuidado e capricho para os pés.</p>
+                </article>
+                <article class="service-card reveal" style="--delay: 200ms;">
+                    <div class="service-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7">
+                            <path d="M5 17c2-3 5-5 8-6 2.4-.8 4.6-1 6-1"></path>
+                            <path d="M6 12c.7-3.4 2.7-6.6 6-8 1 2 1.4 4.2 1 6.2"></path>
+                            <path d="M9 19c1.3-1.8 2.5-3.2 5-4.5 2.4-1.2 4.5-1.4 6-1.5"></path>
+                        </svg>
+                    </div>
+                    <h3>Nail Designer</h3>
+                    <p>Resultado personalizado para valorizar seu estilo.</p>
+                </article>
+                <article class="service-card reveal" style="--delay: 300ms;">
+                    <div class="service-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7">
+                            <path d="m12 3 1.7 4.3L18 9l-4.3 1.7L12 15l-1.7-4.3L6 9l4.3-1.7L12 3Z"></path>
+                            <path d="m18 14 .9 2.1L21 17l-2.1.9L18 20l-.9-2.1L15 17l2.1-.9L18 14Z"></path>
+                            <path d="m6 14 .9 2.1L9 17l-2.1.9L6 20l-.9-2.1L3 17l2.1-.9L6 14Z"></path>
+                        </svg>
+                    </div>
+                    <h3>Banho de Gel</h3>
+                    <p>Mais brilho, resistência e naturalidade para suas unhas.</p>
+                </article>
+            </div>
+            <div class="services-line fade-up">Esmaltação • Nail Art • Decoração • Cuidados personalizados</div>
+        </div>
+    </section>
+
+    <div class="roller is-light">
+        <div class="roller-track">
+            <div class="roller-group">
+                <span class="roller-item">NAIL DESIGNER</span>
+                <span class="roller-item">MANICURE</span>
+                <span class="roller-item">PEDICURE</span>
+                <span class="roller-item">BANHO DE GEL</span>
+                <span class="roller-item">AUTOCUIDADO</span>
+                <span class="roller-item">ACABAMENTO DELICADO</span>
+            </div>
+            <div class="roller-group" aria-hidden="true">
+                <span class="roller-item">NAIL DESIGNER</span>
+                <span class="roller-item">MANICURE</span>
+                <span class="roller-item">PEDICURE</span>
+                <span class="roller-item">BANHO DE GEL</span>
+                <span class="roller-item">AUTOCUIDADO</span>
+                <span class="roller-item">ACABAMENTO DELICADO</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="eyebrow">Portfólio</span>
+                <h2 class="section-title">Estilos reais para inspirar o seu próximo horário.</h2>
+                <p class="section-subtitle">Escolha uma referência, envie pelo WhatsApp e consulte disponibilidade para reproduzir o acabamento que combina com você.</p>
+            </div>
+        </div>
+        <div class="carousel-shell">
+            <div class="carousel-track">
+                <article class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/551881246_18527338723025598_2194022384014812028_n._wnukeg.webp" alt="Unhas delicadas com acabamento suave" loading="lazy">
+                        <span class="portfolio-tag">Delicadas</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Delicadas</h3>
+                        <p>Acabamento leve e elegante para um visual mais sutil.</p>
+                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/496819879_18501411874025598_74173653499244756_n._ntauxy.webp" alt="Unhas clássicas com acabamento refinado" loading="lazy">
+                        <span class="portfolio-tag">Clássicas</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Clássicas</h3>
+                        <p>Visual atemporal, limpo e cheio de delicadeza.</p>
+                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/548601975_18525216454025598_2035889577577903423_n._rncizm.webp" alt="Unhas naturais com brilho discreto" loading="lazy">
+                        <span class="portfolio-tag">Naturais</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Naturais</h3>
+                        <p>Brilho equilibrado e resultado que valoriza o natural.</p>
+                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/620165844_17926674483198356_4180127297039765808_n._mbqed8.webp" alt="Unhas brilhosas em destaque" loading="lazy">
+                        <span class="portfolio-tag">Brilhosas</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Brilhosas</h3>
+                        <p>Pontos de luz e presença para um look mais marcante.</p>
+                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/561602262_18530689039025598_9025904959173769228_n._jmu0kb.webp" alt="Unhas decoradas com detalhes" loading="lazy">
+                        <span class="portfolio-tag">Decoradas</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Decoradas</h3>
+                        <p>Detalhes criativos para valorizar ainda mais seu estilo.</p>
+                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/481416143_18486607426025598_2912883244544668718_n._mili6o.webp" alt="Banho de gel com acabamento sofisticado" loading="lazy">
+                        <span class="portfolio-tag">Banho de gel</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Banho de gel</h3>
+                        <p>Mais resistência, brilho e naturalidade para o dia a dia.</p>
+                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
+                    </div>
+                </article>
+                <article class="portfolio-card" aria-hidden="true">
+                    <div class="portfolio-image">
+                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/551881246_18527338723025598_2194022384014812028_n._wnukeg.webp" alt="" loading="lazy">
+                        <span class="portfolio-tag">Delicadas</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Delicadas</h3>
+                        <p>Acabamento leve e elegante para um visual mais sutil.</p>
+                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
+                    </div>
+                </article>
+                <article class="portfolio-card" aria-hidden="true">
+                    <div class="portfolio-image">
+                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/496819879_18501411874025598_74173653499244756_n._ntauxy.webp" alt="" loading="lazy">
+                        <span class="portfolio-tag">Clássicas</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Clássicas</h3>
+                        <p>Visual atemporal, limpo e cheio de delicadeza.</p>
+                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
+                    </div>
+                </article>
+                <article class="portfolio-card" aria-hidden="true">
+                    <div class="portfolio-image">
+                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/548601975_18525216454025598_2035889577577903423_n._rncizm.webp" alt="" loading="lazy">
+                        <span class="portfolio-tag">Naturais</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Naturais</h3>
+                        <p>Brilho equilibrado e resultado que valoriza o natural.</p>
+                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
+                    </div>
+                </article>
+                <article class="portfolio-card" aria-hidden="true">
+                    <div class="portfolio-image">
+                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/620165844_17926674483198356_4180127297039765808_n._mbqed8.webp" alt="" loading="lazy">
+                        <span class="portfolio-tag">Brilhosas</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Brilhosas</h3>
+                        <p>Pontos de luz e presença para um look mais marcante.</p>
+                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
+                    </div>
+                </article>
+                <article class="portfolio-card" aria-hidden="true">
+                    <div class="portfolio-image">
+                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841625/561602262_18530689039025598_9025904959173769228_n._jmu0kb.webp" alt="" loading="lazy">
+                        <span class="portfolio-tag">Decoradas</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Decoradas</h3>
+                        <p>Detalhes criativos para valorizar ainda mais seu estilo.</p>
+                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
+                    </div>
+                </article>
+                <article class="portfolio-card" aria-hidden="true">
+                    <div class="portfolio-image">
+                        <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1782841626/481416143_18486607426025598_2912883244544668718_n._mili6o.webp" alt="" loading="lazy">
+                        <span class="portfolio-tag">Banho de gel</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Banho de gel</h3>
+                        <p>Mais resistência, brilho e naturalidade para o dia a dia.</p>
+                        <a class="btn btn-outline btn-soft" data-wa-message="Olá! Vi esse estilo no portfólio e gostaria de consultar horários." href="#">Quero esse estilo</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials" style="padding-top: 0;">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="eyebrow">Depoimentos</span>
+                <h2 class="section-title">Carinho no atendimento e cuidado no resultado.</h2>
+                <p class="section-subtitle">Substituir depois por depoimentos reais para reforçar ainda mais a confiança de novas clientes.</p>
+            </div>
+        </div>
+        <div class="carousel-shell">
+            <div class="carousel-track reverse">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrelas">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                    </div>
+                    <p class="testimonial-quote">Profissional muito caprichosa, atendimento maravilhoso e resultado lindo.</p>
+                    <div class="testimonial-author">Cliente Karolayne Nails</div>
+                </article>
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrelas">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                    </div>
+                    <p class="testimonial-quote">Minhas unhas ficaram delicadas, bem feitas e com acabamento impecável.</p>
+                    <div class="testimonial-author">Cliente Karolayne Nails</div>
+                </article>
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrelas">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                    </div>
+                    <p class="testimonial-quote">Gostei muito do cuidado, da atenção e da facilidade para agendar.</p>
+                    <div class="testimonial-author">Cliente Karolayne Nails</div>
+                </article>
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrelas">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                    </div>
+                    <p class="testimonial-quote">Atendimento tranquilo, organizado e feito com muito carinho.</p>
+                    <div class="testimonial-author">Cliente Karolayne Nails</div>
+                </article>
+                <article class="testimonial-card">
+                    <div class="testimonial-stars" aria-label="5 estrelas">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                    </div>
+                    <p class="testimonial-quote">Amei o acabamento e o cuidado em cada detalhe.</p>
+                    <div class="testimonial-author">Cliente Karolayne Nails</div>
+                </article>
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                    </div>
+                    <p class="testimonial-quote">Profissional muito caprichosa, atendimento maravilhoso e resultado lindo.</p>
+                    <div class="testimonial-author">Cliente Karolayne Nails</div>
+                </article>
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                    </div>
+                    <p class="testimonial-quote">Minhas unhas ficaram delicadas, bem feitas e com acabamento impecável.</p>
+                    <div class="testimonial-author">Cliente Karolayne Nails</div>
+                </article>
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                    </div>
+                    <p class="testimonial-quote">Gostei muito do cuidado, da atenção e da facilidade para agendar.</p>
+                    <div class="testimonial-author">Cliente Karolayne Nails</div>
+                </article>
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                    </div>
+                    <p class="testimonial-quote">Atendimento tranquilo, organizado e feito com muito carinho.</p>
+                    <div class="testimonial-author">Cliente Karolayne Nails</div>
+                </article>
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m12 2.5 2.93 5.94 6.56.95-4.74 4.62 1.12 6.53L12 17.45 6.13 20.54l1.12-6.53L2.5 9.39l6.57-.95L12 2.5Z"/></svg>
+                    </div>
+                    <p class="testimonial-quote">Amei o acabamento e o cuidado em cada detalhe.</p>
+                    <div class="testimonial-author">Cliente Karolayne Nails</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <div class="roller">
+        <div class="roller-track reverse">
+            <div class="roller-group">
+                <span class="roller-item">AMOR EM FORMA DE UNHAS</span>
+                <span class="roller-item">RIO DAS PEDRAS</span>
+                <span class="roller-item">JACAREPAGUÁ</span>
+                <span class="roller-item">AGENDE PELO WHATSAPP</span>
+            </div>
+            <div class="roller-group" aria-hidden="true">
+                <span class="roller-item">AMOR EM FORMA DE UNHAS</span>
+                <span class="roller-item">RIO DAS PEDRAS</span>
+                <span class="roller-item">JACAREPAGUÁ</span>
+                <span class="roller-item">AGENDE PELO WHATSAPP</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="eyebrow">Como funciona</span>
+                <h2 class="section-title">Seu horário começa com uma conversa simples.</h2>
+                <p class="section-subtitle">O processo é direto para facilitar o agendamento e deixar a experiência mais organizada.</p>
+            </div>
+            <div class="booking-steps">
+                <article class="booking-step reveal" style="--delay: 0ms;">
+                    <div class="booking-step-number">1</div>
+                    <div><strong>Escolha o serviço</strong><span>Manicure, pedicure, nail designer ou banho de gel.</span></div>
+                </article>
+                <article class="booking-step reveal" style="--delay: 90ms;">
+                    <div class="booking-step-number">2</div>
+                    <div><strong>Chame no WhatsApp</strong><span>Envie sua preferência e, se quiser, uma inspiração do portfólio.</span></div>
+                </article>
+                <article class="booking-step reveal" style="--delay: 180ms;">
+                    <div class="booking-step-number">3</div>
+                    <div><strong>Consulte os horários</strong><span>O atendimento confirma disponibilidade e combina o melhor encaixe.</span></div>
+                </article>
+                <article class="booking-step reveal" style="--delay: 270ms;">
+                    <div class="booking-step-number">4</div>
+                    <div><strong>Receba a localização</strong><span>Depois da conversa, você recebe a orientação certinha do atendimento.</span></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="location-card reveal">
+                <div class="location-pin" aria-hidden="true"></div>
+                <span class="eyebrow">Localização</span>
+                <h2>Atendimento em Rio das Pedras, Jacarepaguá-RJ</h2>
+                <p>Chame no WhatsApp para confirmar os horários disponíveis e receber a localização certinha do atendimento.</p>
+                <div class="location-actions">
+                    <a class="btn btn-whatsapp glow-btn" data-wa-message="Olá! Gostaria de receber a localização e consultar horários disponíveis." href="#">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                            <path d="M20.52 3.48A11.8 11.8 0 0 0 12.07 0C5.55 0 .23 5.3.23 11.83c0 2.08.54 4.11 1.56 5.9L0 24l6.44-1.69a11.8 11.8 0 0 0 5.63 1.44h.01c6.52 0 11.84-5.31 11.84-11.84 0-3.16-1.23-6.13-3.4-8.43Zm-8.45 18.27h-.01a9.94 9.94 0 0 1-5.08-1.39l-.36-.22-3.82 1 1.02-3.72-.24-.38a9.92 9.92 0 0 1-1.52-5.21c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.92a9.86 9.86 0 0 1 2.9 7.02c0 5.48-4.46 9.92-9.94 9.92Zm5.45-7.42c-.3-.15-1.79-.88-2.07-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.51-.9-.8-1.51-1.8-1.68-2.1-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5l-.57-.01c-.2 0-.52.07-.8.38-.27.3-1.05 1.03-1.05 2.52 0 1.48 1.07 2.92 1.22 3.12.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.71.64.72.23 1.37.2 1.88.12.57-.08 1.79-.73 2.04-1.43.25-.7.25-1.3.18-1.43-.08-.12-.27-.2-.57-.35Z"/>
+                        </svg>
+                        Pedir localização
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="eyebrow">FAQ</span>
+                <h2 class="section-title">Dúvidas frequentes</h2>
+            </div>
+            <div class="faq-wrap">
+                <article class="faq-item reveal" style="--delay: 0ms;">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Como faço para agendar?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Clique em qualquer botão de WhatsApp da página e envie sua mensagem. O atendimento responde com os horários disponíveis e orienta os próximos passos.</p>
+                    </div>
+                </article>
+                <article class="faq-item reveal" style="--delay: 80ms;">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>O atendimento é com hora marcada?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. O ideal é consultar os horários disponíveis para garantir um momento mais tranquilo, organizado e dedicado a você.</p>
+                    </div>
+                </article>
+                <article class="faq-item reveal" style="--delay: 160ms;">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Posso mandar uma inspiração?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. Você pode enviar uma imagem do portfólio ou outra referência para alinhar o estilo desejado antes do seu horário.</p>
+                    </div>
+                </article>
+                <article class="faq-item reveal" style="--delay: 240ms;">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Quais serviços estão disponíveis?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O atendimento oferece nail designer, manicure, pedicure e banho de gel, além de detalhes como nail art e cuidados personalizados conforme a conversa.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="cta-box fade-up">
+                <span class="eyebrow">Agendamento</span>
+                <h2 class="section-title">Seu próximo horário pode começar com uma mensagem.</h2>
+                <p>Fale pelo WhatsApp e consulte os horários disponíveis para cuidar das suas unhas com capricho, delicadeza e atenção aos detalhes.</p>
+                <div class="pill-list" style="justify-content: center; margin-top: 1.5rem;">
+                    <span class="pill">Nail Designer</span>
+                    <span class="pill">Manicure</span>
+                    <span class="pill">Pedicure</span>
+                    <span class="pill">Rio das Pedras</span>
+                </div>
+                <div class="cta-actions">
+                    <a class="btn btn-whatsapp glow-btn" data-wa-message="Olá! Vi sua página e gostaria de consultar horários para fazer minhas unhas." href="#">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                            <path d="M20.52 3.48A11.8 11.8 0 0 0 12.07 0C5.55 0 .23 5.3.23 11.83c0 2.08.54 4.11 1.56 5.9L0 24l6.44-1.69a11.8 11.8 0 0 0 5.63 1.44h.01c6.52 0 11.84-5.31 11.84-11.84 0-3.16-1.23-6.13-3.4-8.43Zm-8.45 18.27h-.01a9.94 9.94 0 0 1-5.08-1.39l-.36-.22-3.82 1 1.02-3.72-.24-.38a9.92 9.92 0 0 1-1.52-5.21c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.92a9.86 9.86 0 0 1 2.9 7.02c0 5.48-4.46 9.92-9.94 9.92Zm5.45-7.42c-.3-.15-1.79-.88-2.07-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.51-.9-.8-1.51-1.8-1.68-2.1-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5l-.57-.01c-.2 0-.52.07-.8.38-.27.3-1.05 1.03-1.05 2.52 0 1.48 1.07 2.92 1.22 3.12.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.71.64.72.23 1.37.2 1.88.12.57-.08 1.79-.73 2.04-1.43.25-.7.25-1.3.18-1.43-.08-.12-.27-.2-.57-.35Z"/>
+                        </svg>
+                        Agendar agora pelo WhatsApp
+                    </a>
+                    <a class="btn btn-champagne glow-btn" href="#portfolio">Ver inspirações</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-mark">KR</div>
+            <div class="footer-title">Karolayne Rodrigues Nails</div>
+            <div class="footer-copy">Ofereço amor em forma de unhas</div>
+            <div class="footer-meta">RJ, Jacarepaguá, Rio das Pedras</div>
+            <div class="footer-links">
+                <a href="#" data-instagram-link>Instagram</a>
+                <a href="#" data-wa-message="Olá! Vi sua página e gostaria de consultar horários para fazer minhas unhas.">WhatsApp</a>
+            </div>
+            <div class="footer-small">© <span id="current-year"></span> Karolayne Rodrigues Nails. Todos os direitos reservados.</div>
+        </div>
+    </footer>
+
+    <div class="floating-stack" aria-label="Ações rápidas">
+        <a class="floating-link floating-instagram" href="#" data-instagram-link aria-label="Abrir Instagram">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.4" cy="6.6" r="1"></circle>
+            </svg>
+            <span>Instagram</span>
+        </a>
+        <a class="floating-link floating-whatsapp" href="#" data-wa-message="Olá! Vi sua página e gostaria de consultar horários para fazer minhas unhas." aria-label="Falar no WhatsApp">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M20.52 3.48A11.8 11.8 0 0 0 12.07 0C5.55 0 .23 5.3.23 11.83c0 2.08.54 4.11 1.56 5.9L0 24l6.44-1.69a11.8 11.8 0 0 0 5.63 1.44h.01c6.52 0 11.84-5.31 11.84-11.84 0-3.16-1.23-6.13-3.4-8.43Zm-8.45 18.27h-.01a9.94 9.94 0 0 1-5.08-1.39l-.36-.22-3.82 1 1.02-3.72-.24-.38a9.92 9.92 0 0 1-1.52-5.21c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.92a9.86 9.86 0 0 1 2.9 7.02c0 5.48-4.46 9.92-9.94 9.92Zm5.45-7.42c-.3-.15-1.79-.88-2.07-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.51-.9-.8-1.51-1.8-1.68-2.1-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5l-.57-.01c-.2 0-.52.07-.8.38-.27.3-1.05 1.03-1.05 2.52 0 1.48 1.07 2.92 1.22 3.12.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.71.64.72.23 1.37.2 1.88.12.57-.08 1.79-.73 2.04-1.43.25-.7.25-1.3.18-1.43-.08-.12-.27-.2-.57-.35Z"/>
+            </svg>
+            <span>Agendar</span>
+        </a>
+    </div>
+
+    <script>
+        const whatsappNumber = "5521982642608";
+        const instagramUrl = "https://www.instagram.com/karolaynerodriguesnails/";
+        const defaultWhatsappMessage = "Olá! Vi sua página e gostaria de consultar horários para fazer minhas unhas.";
+
+        function buildWhatsappUrl(message) {
+            return "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message || defaultWhatsappMessage);
+        }
+
+        function applyLinks() {
+            document.querySelectorAll("[data-wa-message]").forEach((link) => {
+                const message = link.getAttribute("data-wa-message") || defaultWhatsappMessage;
+                link.href = buildWhatsappUrl(message);
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+            });
+
+            document.querySelectorAll("[data-instagram-link]").forEach((link) => {
+                link.href = instagramUrl;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+            });
+        }
+
+        function setupObserver() {
+            const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            const revealItems = document.querySelectorAll(".reveal, .fade-up");
+
+            if (reducedMotion || !("IntersectionObserver" in window)) {
+                revealItems.forEach((item) => item.classList.add("is-visible"));
+                return;
+            }
+
+            const observer = new IntersectionObserver((entries, instance) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    }
+
+                    entry.target.classList.add("is-visible");
+                    instance.unobserve(entry.target);
+                });
+            }, {
+                threshold: 0.16,
+                rootMargin: "0px 0px -6% 0px"
+            });
+
+            revealItems.forEach((item) => {
+                if (item.classList.contains("is-visible")) {
+                    return;
+                }
+
+                observer.observe(item);
+            });
+        }
+
+        function setupNavbar() {
+            const navbar = document.getElementById("navbar");
+            const onScroll = () => {
+                navbar.classList.toggle("is-scrolled", window.scrollY > 24);
+            };
+
+            onScroll();
+            window.addEventListener("scroll", onScroll, { passive: true });
+        }
+
+        function setupFaq() {
+            const questions = document.querySelectorAll(".faq-question");
+
+            questions.forEach((question) => {
+                question.addEventListener("click", () => {
+                    const isExpanded = question.getAttribute("aria-expanded") === "true";
+
+                    questions.forEach((item) => {
+                        item.setAttribute("aria-expanded", "false");
+                        const answer = item.nextElementSibling;
+                        answer.style.maxHeight = null;
+                    });
+
+                    if (!isExpanded) {
+                        question.setAttribute("aria-expanded", "true");
+                        const answer = question.nextElementSibling;
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    }
+                });
+            });
+        }
+
+        function setupPreloader() {
+            const preloader = document.getElementById("preloader");
+            const minimumDuration = 1100;
+            const start = performance.now();
+
+            window.addEventListener("load", () => {
+                const elapsed = performance.now() - start;
+                const delay = Math.max(0, minimumDuration - elapsed);
+
+                window.setTimeout(() => {
+                    preloader.classList.add("is-hidden");
+                }, delay);
+            });
+        }
+
+        function setupPage() {
+            applyLinks();
+            setupObserver();
+            setupNavbar();
+            setupFaq();
+            document.getElementById("current-year").textContent = String(new Date().getFullYear());
+        }
+
+        setupPreloader();
+        document.addEventListener("DOMContentLoaded", setupPage);
+    </script>
+</body>
+</html>
